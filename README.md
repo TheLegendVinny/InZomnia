@@ -1,9 +1,11 @@
 # InZomnia
 Any Commits / Suggestions Would Be Apperciated
 
-#Current Version 0.0.29B
-
 Have An Issue? Report It!
+
+ #Current Version 0.0.29B
+
+
 
 # Known Issues:
 1: client side will not see gun affects of other clients/host if there is only 1 bullet. this is due to the subtraction of the clip before affects are made.
