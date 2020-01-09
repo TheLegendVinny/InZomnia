@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Intro Events</name>
+    <events>
+        <event-block sid="703984197400312">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="521034579312932" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="583733526908804" type="Audio">
+                    <param id="0" name="Audio file">intro music</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Intro Music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="502336166928697">
+            <conditions>
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="275987530277752" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="537425130467392" type="System">
+                    <param id="0" name="Seconds">4.7</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="509044417768100" type="Sprite">
+                    <param id="0" name="Fade-in time">0</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="220922697777447" type="Sprite">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+                <action behavior="Fade" id="0" name="Restart fade" sid="290689795608399" type="Sprite" />
+                <action id="-16" name="Wait" sid="551748088397775" type="System">
+                    <param id="0" name="Seconds">1.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="104570291233693" type="System">
+                    <param id="0" name="Layout">Login</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

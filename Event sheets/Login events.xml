@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Login events</name>
+    <events>
+        <variable constant="0" name="IsFullscreen" sid="591110093211688" static="0" type="number">0</variable>
+        <comment>The alias to pass to the next layout.</comment>
+        <variable comment="Name entered on login screen" constant="0" name="MyUsername" sid="2622484095485436" static="0" type="text"></variable>
+        <event-block sid="2836949466833005">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6126620317071436" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set focused" sid="9867701037124423" type="NameTextBox" />
+                <action id="33" name="Stop all" sid="233530674787073" type="Audio" />
+            </actions>
+            <sub-events>
+                <comment>If multiplayer is not supported by this browser, indicate this on the login screen.</comment>
+                <event-block sid="1179364240431432">
+                    <conditions>
+                        <condition id="12" inverted="1" name="Supports multiplayer" sid="2198745088043849" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="4781376075840142" type="Title">
+                            <param id="0" name="Text">&quot;Multiplayer not supported&quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="2094524088918796" type="Title">
+                            <param id="0" name="Color">rgb(255, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Make the &apos;Join&apos; button disabled if the entered name is empty, so the user cannot try to join without first entering a name.</comment>
+        <event-block sid="4183836433052302">
+            <conditions>
+                <condition id="1" name="On text changed" sid="7534354610094868" type="NameTextBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7550250181372236">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="9031337259178081" type="NameTextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="8651540193189224" type="JoinButton">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="297632502846597">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="317397003200696" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="3601060704976601" type="JoinButton">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>When clicking &apos;Join&apos; or pressing enter with a non-empty name, store the entered name in the global variable and go to the Game layout which will then try to connect.</comment>
+        <event-block any="1" sid="2250300775226276">
+            <conditions>
+                <condition id="0" name="On clicked" sid="281406848246412" type="JoinButton" />
+                <condition id="0" name="On key pressed" sid="2494264979247668" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="203152535801682" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4386750916393495">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="5037371393004393" type="NameTextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                        <condition id="12" name="Supports multiplayer" sid="1583940091524849" type="Multiplayer" />
+                        <condition id="-9" name="Layer is visible" sid="743198081440669" type="System">
+                            <param id="0" name="Layer">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="383394030999022" type="System">
+                            <param id="0" name="Variable">MyUsername</param>
+                            <param id="1" name="Value">NameTextBox.Text</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6347285549464009" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="838283784861846">
+            <conditions>
+                <condition id="0" name="On clicked" sid="569509458026162" type="Start" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="268836817934765" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="845197218607296" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="813678468501549" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="332486163101787" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="633702842363357">
+            <conditions>
+                <condition id="0" name="On clicked" sid="531164881181843" type="Back" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="975240262005094" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="551032733328718" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="993222429387886" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="497613182979769" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="719590200247997">
+            <conditions>
+                <condition id="0" name="On clicked" sid="359829240743349" type="Settings" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="295840253081290" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="600596825629243" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="219764040140352" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="890567143333931" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530395131145766">
+            <conditions>
+                <condition id="0" name="On clicked" sid="214544399017547" type="Backsettings" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="481971232415334" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="998591654389605" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="533672436956573" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="733682180311342" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="892869192829447">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="669721805121244" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="976340266001392" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="147005095984149" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="223102409156239" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="356746589323181">
+            <conditions>
+                <condition id="1" name="Is checked" sid="566516084235306" type="Fullscreen" />
+                <condition id="-4" name="Trigger once while true" sid="357606798814516" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="126431659423085" type="Browser">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="279728319000980" type="System">
+                    <param id="0" name="Variable">IsFullscreen</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="810645527802982">
+            <conditions>
+                <condition id="1" inverted="1" name="Is checked" sid="745916559621584" type="Fullscreen" />
+                <condition id="-4" name="Trigger once while true" sid="447445302804762" type="System" />
+            </conditions>
+            <actions>
+                <action id="11" name="Cancel fullscreen" sid="287278181181062" type="Browser" />
+                <action id="-9" name="Set value" sid="883063761249343" type="System">
+                    <param id="0" name="Variable">IsFullscreen</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
