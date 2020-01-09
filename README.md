@@ -5,6 +5,10 @@ Have An Issue? Report It!
 
 # Current Version 0.0.29B
 
+Download The Latest Version Below.
+
+https://github.com/TheLegendVinny/InZomnia/releases
+
 # Change Log
 
 # Known Issues:
