@@ -18,3 +18,6 @@ https://github.com/TheLegendVinny/InZomnia/releases
 
 3: peers will sometimes not join correctly, possibly from a peer joining before host is loaded but cause is unknown, fix is to use esc menu/restart
 
+# Roadmap/InProgress
+- Check For Update
+- Update.
