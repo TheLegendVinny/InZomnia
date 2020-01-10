@@ -20,4 +20,4 @@ https://github.com/TheLegendVinny/InZomnia/releases
 
 # Roadmap/InProgress
 - Check For Update
-- Update.
+- Update in program if update exists.
