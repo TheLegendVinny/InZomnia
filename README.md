@@ -19,9 +19,6 @@ https://github.com/TheLegendVinny/InZomnia/releases
 3: peers will sometimes not join correctly, possibly from a peer joining before host is loaded but cause is unknown, fix is to use esc menu/restart
 
 # Roadmap/InProgress
-DONE //- Version Check//
-
-DONE //- Player To Zombie Zombat//
 
 - Check For Update
 
@@ -29,3 +26,6 @@ DONE //- Player To Zombie Zombat//
 
 - Player To AI Player Combat
 
+DONE //- Version Check//
+
+DONE //- Player To Zombie Zombat//
