@@ -20,7 +20,12 @@ https://github.com/TheLegendVinny/InZomnia/releases
 
 # Roadmap/InProgress
 DONE //- Version Check//
+
 DONE //- Player To Zombie Zombat//
+
 - Check For Update
+
 - Update in program if update exists.
+
 - Player To AI Player Combat
+
