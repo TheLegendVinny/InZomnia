@@ -72,10 +72,17 @@
                 </condition>
             </conditions>
             <actions>
+<<<<<<< HEAD
                 <action id="0" name="Play" sid="580147719670844" type="Audio">
                     <param id="0" name="Audio file">button click</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">SoundVolume / 2 -50</param>
+=======
+                <action id="0" name="Play" sid="203152535801682" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -120,10 +127,17 @@
                     <param id="0" name="Layer">3</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
+<<<<<<< HEAD
                 <action id="0" name="Play" sid="813457842780455" type="Audio">
                     <param id="0" name="Audio file">button click</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">SoundVolume / 2 -50</param>
+=======
+                <action id="0" name="Play" sid="332486163101787" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -145,10 +159,17 @@
                     <param id="0" name="Layer">3</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
+<<<<<<< HEAD
                 <action id="0" name="Play" sid="511520883389217" type="Audio">
                     <param id="0" name="Audio file">button click</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">SoundVolume / 2 -50</param>
+=======
+                <action id="0" name="Play" sid="497613182979769" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -173,7 +194,11 @@
                 <action id="0" name="Play" sid="890567143333931" type="Audio">
                     <param id="0" name="Audio file">button click</param>
                     <param id="2" name="Loop">0</param>
+<<<<<<< HEAD
                     <param id="3" name="Volume">SoundVolume / 2 -50</param>
+=======
+                    <param id="3" name="Volume">0</param>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -195,10 +220,17 @@
                     <param id="0" name="Layer">2</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
+<<<<<<< HEAD
                 <action id="0" name="Play" sid="581209734061058" type="Audio">
                     <param id="0" name="Audio file">button click</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">SoundVolume / 2 -50</param>
+=======
+                <action id="0" name="Play" sid="733682180311342" type="Audio">
+                    <param id="0" name="Audio file">button click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -250,6 +282,7 @@
                 </action>
             </actions>
         </event-block>
+<<<<<<< HEAD
         <event-block sid="316746458310270">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="670923128890668" type="System" />
@@ -391,5 +424,7 @@
                 </event-block>
             </sub-events>
         </event-block>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
     </events>
 </c2eventsheet>

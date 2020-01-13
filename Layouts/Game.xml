@@ -102,6 +102,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="PlayerShoot" uid="114">
                     <properties>
                         <light-height>0</light-height>
@@ -135,6 +136,8 @@
                         <opacity>0</opacity>
                     </world>
                 </instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
             </instances>
             <effects />
         </layer>
@@ -154,7 +157,11 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+<<<<<<< HEAD
                 <instance type="Player" uid="0">
+=======
+                <instance type="Peer" uid="0">
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -166,6 +173,10 @@
                         <lookatx>0</lookatx>
                         <lookaty>0</lookaty>
                         <inputs>0</inputs>
+<<<<<<< HEAD
+=======
+                        <inputs2>0</inputs2>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                         <health>100</health>
                         <kills>0</kills>
                         <deaths>0</deaths>
@@ -193,7 +204,10 @@
                         <Time>0</Time>
                         <Speed>0</Speed>
                         <Isplacing>0</Isplacing>
+<<<<<<< HEAD
                         <version>0</version>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -225,6 +239,7 @@
                                 <use-collision-cells>Yes</use-collision-cells>
                             </properties>
                         </behavior-instance>
+<<<<<<< HEAD
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -232,6 +247,8 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -442,6 +459,7 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
+<<<<<<< HEAD
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -449,6 +467,8 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -511,6 +531,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+<<<<<<< HEAD
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -518,6 +539,8 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -662,6 +685,7 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
+<<<<<<< HEAD
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -669,6 +693,8 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -698,6 +724,7 @@
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="DestroyOutsideLayout" />
+<<<<<<< HEAD
                         <behavior-instance type="ShadowCaster">
                             <properties>
                                 <initial-state>Enabled</initial-state>
@@ -705,6 +732,8 @@
                                 <tag></tag>
                             </properties>
                         </behavior-instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -749,6 +778,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="AI" uid="113">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -818,6 +848,8 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
             </instances>
             <effects />
         </layer>
@@ -952,6 +984,32 @@
                         <opacity>0.800000012</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
+=======
+                <instance type="Flash" uid="49">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Center</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-680</x>
+                        <y>21</y>
+                        <z>0</z>
+                        <width>854</width>
+                        <height>854</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.699999988</opacity>
+                    </world>
+                </instance>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                 <instance type="HitParticle" uid="64">
                     <properties>
                         <rate>30</rate>
@@ -1033,7 +1091,11 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
+<<<<<<< HEAD
                         <opacity>1</opacity>
+=======
+                        <opacity>0</opacity>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
             </instances>
@@ -1074,7 +1136,11 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+<<<<<<< HEAD
                         <opacity>0.349999994</opacity>
+=======
+                        <opacity>0.600000024</opacity>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
                 <instance type="UI" uid="17">
@@ -1096,7 +1162,11 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+<<<<<<< HEAD
                         <opacity>0.349999994</opacity>
+=======
+                        <opacity>0.600000024</opacity>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
                 <instance type="UI" uid="9">
@@ -1118,7 +1188,11 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+<<<<<<< HEAD
                         <opacity>0.349999994</opacity>
+=======
+                        <opacity>0.600000024</opacity>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
                 <instance type="HostIndicator" uid="5">
@@ -1617,7 +1691,11 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+<<<<<<< HEAD
                         <opacity>0.349999994</opacity>
+=======
+                        <opacity>0.600000024</opacity>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
                 <instance type="Wood" uid="70">
@@ -1871,11 +1949,19 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>-99.687103271</x>
                         <y>778.374938965</y>
                         <z>0</z>
                         <width>43</width>
                         <height>43</height>
+=======
+                        <x>-2051</x>
+                        <y>778</y>
+                        <z>0</z>
+                        <width>42.473522186</width>
+                        <height>42.473522186</height>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                         <depth>0</depth>
                         <hotspotX>0.594339609</hotspotX>
                         <hotspotY>0.71226418</hotspotY>
@@ -1883,6 +1969,7 @@
                         <opacity>0.800000012</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="Flash" uid="49">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -1916,6 +2003,8 @@
                         <opacity>0.600000024</opacity>
                     </world>
                 </instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
             </instances>
             <effects />
         </layer>
@@ -2120,6 +2209,7 @@
                         <opacity>0.699999988</opacity>
                     </world>
                 </instance>
+<<<<<<< HEAD
                 <instance type="MasterVolumelogin" uid="107">
                     <properties>
                         <value>100</value>
@@ -2282,6 +2372,8 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                 <instance type="BackESC" uid="60">
                     <properties>
                         <type>Button</type>
@@ -2320,7 +2412,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>798.447998047</x>
+=======
+                        <x>798.447509766</x>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                         <y>355</y>
                         <z>0</z>
                         <width>323.105010986</width>
@@ -2381,7 +2477,11 @@
                 <instance type="FullscreenESC" uid="85">
                     <properties>
                         <type>Checkbox</type>
+<<<<<<< HEAD
                         <text></text>
+=======
+                        <text>Fullscreen</text>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                         <tooltip></tooltip>
                         <initial-visibility>Invisible</initial-visibility>
                         <enabled>Yes</enabled>
@@ -2392,6 +2492,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>892</x>
                         <y>475</y>
                         <z>0</z>
@@ -2430,6 +2531,16 @@
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+=======
+                        <x>946</x>
+                        <y>475</y>
+                        <z>0</z>
+                        <width>114.917358398</width>
+                        <height>38.305786133</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
                     </world>
                 </instance>
             </instances>
@@ -2445,6 +2556,7 @@
             </properties>
         </instance>
     </nonworld-instances>
+<<<<<<< HEAD
     <effects>
         <effect-type name="BlurHorizontal">
             <effect id="blurhorizontal" />
@@ -2455,4 +2567,7 @@
             </effect-instance>
         </effect-type>
     </effects>
+=======
+    <effects />
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
 </c2layout>

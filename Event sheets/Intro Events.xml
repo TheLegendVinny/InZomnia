@@ -14,10 +14,13 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Intro Music&quot;</param>
                 </action>
+<<<<<<< HEAD
                 <action id="0" name="Write file" sid="268525094220429" type="NWjs">
                     <param id="0" name="Path">NWjs.UserFolder &amp; &quot;Version.txt&quot;</param>
                     <param id="1" name="Contents">projectversion</param>
                 </action>
+=======
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
             </actions>
         </event-block>
         <event-block sid="502336166928697">

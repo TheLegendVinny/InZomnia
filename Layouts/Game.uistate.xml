@@ -4,11 +4,19 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
+<<<<<<< HEAD
         <position-x>2634.46</position-x>
         <position-y>1218.76</position-y>
         <position-z>620.921</position-z>
         <lookat-x>2634.46</lookat-x>
         <lookat-y>1218.76</lookat-y>
+=======
+        <position-x>170.015</position-x>
+        <position-y>324.329</position-y>
+        <position-z>197.844</position-z>
+        <lookat-x>170.015</lookat-x>
+        <lookat-y>324.329</lookat-y>
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -25,12 +33,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Background" />
     <layers>
+<<<<<<< HEAD
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Game" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Lasers" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Darkness" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Cursour" parallax-in-editor="0" visible="1" />
+=======
+        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Game" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Lasers" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Darkness" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="UI" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Cursour" parallax-in-editor="0" visible="1" />
+>>>>>>> 4bd40c9818ae71529902250afd22d6977d883d32
         <layer locked="1" name="Craft" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="ESC Menu" parallax-in-editor="0" visible="1" />
     </layers>
