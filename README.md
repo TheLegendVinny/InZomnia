@@ -3,7 +3,7 @@ Any Commits / Suggestions Would Be Apperciated
 
 Have An Issue? Report It!
 
-# Current Version 0.0.29B
+# Current Version 0.0.31
 
 Download The Latest Version Below.
 
@@ -19,6 +19,6 @@ https://github.com/TheLegendVinny/InZomnia/releases
 3: peers will sometimes not join correctly, possibly from a peer joining before host is loaded but cause is unknown, fix is to use esc menu/restart
 
 # Roadmap/InProgress
-- Version Check
+DONE //- Version Check//
 - Check For Update
 - Update in program if update exists.
